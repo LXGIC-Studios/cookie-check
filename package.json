@@ -1,0 +1,41 @@
+{
+  "name": "@lxgicstudios/cookie-check",
+  "version": "1.0.0",
+  "description": "Fetch any URL and audit all Set-Cookie headers for security issues. Check HttpOnly, Secure, SameSite, Path, and Expires flags. Grade each cookie with actionable fixes. CI-ready JSON output.",
+  "main": "dist/index.js",
+  "bin": {
+    "cookie-check": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cookie",
+    "security",
+    "audit",
+    "httponly",
+    "samesite",
+    "secure",
+    "headers",
+    "web-security",
+    "cli",
+    "pentest"
+  ],
+  "author": "LXGIC Studios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxgicstudios/cookie-check"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  }
+}
